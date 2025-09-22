@@ -15,6 +15,9 @@
 #
 ################################################################################
 
+"""
+python -m test.emulator.test_distributed 
+"""
 
 import os
 import torch
@@ -31,8 +34,8 @@ from vescale.emulator.reduce_kernel import ReduceOp
 
 from vescale.emulator.all_gather import expand_tensor_list
 from vescale.emulator.reduce_scatter import contract_tensor_list
-from common_dtensor import DTensorTestBase, with_comms
-from emulator.common_emulator import with_comms_emulator
+from ..common_dtensor import DTensorTestBase, with_comms
+from ..emulator.common_emulator import with_comms_emulator
 from vescale.emulator.utils import emulator_reduce_op_to_torch
 
 
